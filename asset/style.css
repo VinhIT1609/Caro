@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -32,10 +32,9 @@
   height: 200px;
   display: flex;
   justify-content: space-between;
-  font-family: fantasy;
 }
 .name_language {
-  width: 30%;
+  width: 38%;
   height: 40%;
   background-color: white;
   border-radius: 50px;
@@ -58,6 +57,14 @@
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+}
+.btn_download > a {
+  text-decoration: none;
+  color: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+
 }
 .btn_download:hover {
   transition: 0.5s;
@@ -105,7 +112,6 @@
 }
 
 .top_header {
-  font-family: fantasy;
   padding: 20px 0px;
   display: flex;
   justify-content: center;
@@ -115,15 +121,38 @@
 .bold {
   font-weight: 600;
 }
+
 .footer {
-  background-color: #333;
-  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: 200px;
+  padding: 64px 16px;
   text-align: center;
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  z-index: 9999;
 }
-.guide_content {
+.socials-list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .socials-list a {
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.copy-right a:hover,
+.footer .socials-list a:hover {
+  transition: 0.5s;
+  color: rgba(246, 246, 246, 0.4);
+}
+.copy-right {
+  font-size: 15px;
+}
+.copy-right a {
+  color: rgba(0, 0, 0, 0.8);
 }

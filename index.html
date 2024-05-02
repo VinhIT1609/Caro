@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="asset/style.css" />
-
+    <link rel="stylesheet" href="asset/fonts/themify-icons/themify-icons.css" />
     <title>Caro</title>
   </head>
   <body>
@@ -16,12 +16,16 @@
       <!-- header section -->
       <div class="header">
         <div class="name_language">
-          <div class="name">CARO - 2 PLAYERS</div>
+          <div class="name">CARO - 2 NGƯỜI CHƠI</div>
           <div class="language">PYTHON</div>
         </div>
         <div class="btn_download">
-          <div class="material-symbols-outlined download_icon">download</div>
-          <div class="download_content">Download Now</div>
+          <a
+            href="https://github.com/DungIT2k2/Caro_Socket/releases/tag/v1.0.0"
+          >
+            <div class="material-symbols-outlined download_icon">download</div>
+            <div class="download_content">Download Now</div>
+          </a>
         </div>
       </div>
       <!-- header section -->
@@ -30,40 +34,45 @@
         <div class="body_content">
           <div class="introduce">
             <div class="top_header">
-              <div class="header_content">Introduce</div>
+              <div class="header_content">GIỚI THIỆU</div>
             </div>
             <div class="box_content">
               <p class="indented">
-                Trò chơi Caro - một trò chơi với nguồn gốc từ trò chơi gomoku cổ
-                điển, nổi tiếng với tên gọi "Five in a Row", là một trong những
-                trò chơi chiến thuật thú vị và sâu sắc. Với lịch sử hơn một thế
-                kỷ, Caro không chỉ là một trò chơi giải trí, mà còn là một bài
-                toán chiến thuật được nhiều người yêu thích và tìm hiểu. Trò
-                chơi Caro đòi hỏi người chơi phải có sự tư duy chiến thuật, khả
-                năng dự đoán và phản ứng nhanh nhạy. Trên bàn cờ 15 X 15, hai
-                người chơi sẽ thay phiên nhau đánh dấu X hoặc O trên các ô
-                trống, với mục tiêu tạo thành một dãy liên tiếp gồm 5 dấu X hoặc
-                O theo hàng ngang, cột dọc hoặc đường chéo.
+                Caro hay còn được biết đến với cái tên Gomoku hoặc Five in a
+                Row. Mục tiêu của trò chơi là xếp được năm nước đi của mình tạo
+                thành một hàng ngang, hàng dọc hoặc hàng chéo trước khi đối thủ
+                làm được điều đó. Với sự kết hợp giữa chiến thuật và tư duy,
+                Caro đã trở thành một trò chơi phổ biến và thú vị được nhiều
+                người ưa thích. Ứng dụng trò chơi Caro 2 người chơi được xây
+                dựng dựa các mục tiêu của trò chơi trên được viết bằng ngôn ngữ
+                Python và sử dụng thư viện Socket cho phép kết nối trực tiếp
+                giữa 2 người chơi với nhau thông qua mạng.
               </p>
             </div>
           </div>
           <!-- box guide -->
           <div class="guide">
             <div class="top_header">
-              <div class="header_content">Installation Guide</div>
+              <div class="header_content">HƯỚNG DẪN CÀI ĐẶT</div>
             </div>
             <div class="box_content">
-              <p class="indented">
-                <p class="guide_content">
+              <div class="indented">
+                <div class="guide_content">
                   <!-- Bước 1 -->
                   <p class="bold">Bước 1: Tải xuống source-code từ GitHub.</p>
                   <p>Tải xuống GitHub thông qua đường dẫn sau:</p>
-                  <a href="https://github.com/DungIT2k2/Caro-Socket">https://github.com/DungIT2k2/Caro-Socket</a>
+                  <a href="https://github.com/DungIT2k2/Caro-Socket"
+                    >https://github.com/DungIT2k2/Caro-Socket</a
+                  >
                   <p>Giải nén và thu được thư mục game Caro.</p>
                   <!-- Bước 2 -->
-                  <p class="bold">Bước 2: Cài đặt python với hệ điều hành tương thích.</p>
+                  <p class="bold">
+                    Bước 2: Cài đặt python với hệ điều hành tương thích.
+                  </p>
                   <p class="bold">Đối với Windows:</p>
-                  <p>• Truy cập đường dẫn sau: https://www.python.org/downloads/</p>
+                  <p>
+                    • Truy cập đường dẫn sau: https://www.python.org/downloads/
+                  </p>
                   <p>• Tải file .exe và tiến hành cài đặt trên máy tính.</p>
                   <p class="bold">Đối với Ubuntu:</p>
                   <p>• Mở Terminal và nhập lệnh</p>
@@ -75,14 +84,17 @@
                   <p class="indented bold">pip3 install --upgrade setuptool</p>
                   <!-- Bước 3 -->
                   <p class="bold">Bước 3: Cài đặt các thư viện cần thiết.</p>
-                  <p>Mở Terminal trong thư mục Caro, và tiến hành cài đặt thư viện</p>
+                  <p>
+                    Mở Terminal trong thư mục Caro, và tiến hành cài đặt thư
+                    viện
+                  </p>
                   <p class="bold">Đối với Windows:</p>
                   <p>• Sử dụng lệnh:</p>
                   <p class="indented bold">pip install -r requirements.txt</p>
                   <p class="bold">Đối với Ubuntu:</p>
                   <p>• Sử dụng lệnh:</p>
                   <p class="indented bold">pip3 install -r requirements.txt</p>
-                  <p>• Cài đặt thư viện "tk": </p>
+                  <p>• Cài đặt thư viện "tk":</p>
                   <p class="indented bold">pip3 install -r requirements.txt</p>
                   <!-- Bước 4 -->
                   <p class="bold">Bước 4: Chạy ứng dụng.</p>
@@ -93,18 +105,27 @@
                   <p class="bold">Đối với Ubuntu:</p>
                   <p>• Sử dụng lệnh:</p>
                   <p class="indented bold">python3 run.py</p>
-                </p>
-              </p>
+                </div>
+              </div>
             </div>
           </div>
           <!-- box guide -->
+          <div class="footer">
+            <div class="socials-list">
+              <a href=""><i class="ti-facebook"></i></a>
+              <a href=""><i class="ti-youtube"></i></a>
+              <a href=""><i class="ti-instagram"></i></a>
+              <a href=""><i class="ti-pinterest"></i></a>
+              <a href=""><i class="ti-linkedin"></i></a>
+              <a href=""><i class="ti-twitter"></i></a>
+            </div>
+            <!-- <p class="mt-16 copy-right">Powered by <a href="">Crimlyth</a></p> -->
+          </div>
         </div>
       </div>
     </div>
     <!-- body section -->
-    <!-- footer section -->
-    <div class="footer"></div>
-    <!-- footer section -->
+    
   </body>
   <script src="js/script.js"></script>
 </html>
