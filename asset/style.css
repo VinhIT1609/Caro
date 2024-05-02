@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url(/asset/image/painting-mountain-lake-with-mountain-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 20px;
+}
+.header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  font-family: fantasy;
+}
+.name_language {
+  width: 30%;
+  height: 40%;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-size: 50px;
+  font-weight: 600;
+}
+.btn_download {
+  cursor: pointer;
+  width: 15%;
+  height: 20%;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.btn_download:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.download_content {
+  font-size: 30px;
+}
+.download_icon {
+  font-size: 40px;
+}
+/* body */
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+.right,
+.left {
+  height: 60%;
+  width: 45%;
+  border-radius: 50px;
+  background-color: white;
+}
+.right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.video{
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.right_header,
+.left_header {
+  font-family: fantasy;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
