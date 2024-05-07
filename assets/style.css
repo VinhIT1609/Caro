@@ -24,6 +24,13 @@ a {
   height: 100%;
   width: 100%;
 }
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
 .nav {
   background: url(image/bg2.png);
   background-repeat: no-repeat;
