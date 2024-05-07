@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+/* active class */
+.active_nav {
+  background-color: white;
+  color: #cf404d;
+}
+/* main css */
+.main {
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  background: url(image/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 100%;
+  background-color: #2d3e4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  position: fixed;
+  color: white;
+}
+
+.option {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.option:hover {
+  cursor: pointer;
+  color: #cf404d;
+  /* background-color: white; */
+  transition: 0.5s;
+}
+.content {
+  width: 80%;
+  height: 100vh;
+  float: right;
+  clear: both;
+  font-family: "STIX Two Text", serif;
+}
+.section1 {
+  width: 100%;
+  height: 100%;
+}
+.name_language {
+  /* background-color: white; */
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.name {
+  font-size: 100px;
+  font-weight: 600;
+}
+.btn_download {
+  position: fixed;
+  z-index: 9999;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  right: 0;
+  margin-right: 10px;
+  top: 50%;
+}
+.btn_download > a {
+  text-decoration: none;
+  color: inherit;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.btn_download:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.download_content {
+  font-size: 30px;
+}
+.download_icon {
+  font-size: 40px;
+}
+
+.section {
+  height: 100vh;
+}
+.section_title {
+  font-size: 50px;
+  padding: 20px;
+  font-weight: 700;
+}
+.section:nth-child(1) {
+  background: url(image/background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.section:nth-child(2) {
+  background: url(image/mesh-818.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section:nth-child(3) {
+  background: url(image/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section:nth-child(4) {
+  background: url(image/painting-mountain-lake-with-mountain-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box_content {
+  font-size: 50px;
+  padding: 50px;
+}
+.indented {
+  text-indent: 2em;
+}
+.guide_content {
+  width: 100%;
+  height: 100vh;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+.box_guide {
+  width: 90%;
+  height: 80%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.left_guide,
+.right_guide {
+  background-color: white;
+  border-radius: 50px;
+  width: 70%;
+  height: 70%;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding: 0px 10px;
+}
+.left_guide {
+}
+.right_guide {
+}
+.intended {
+  text-indent: 2em;
+}
+.bold {
+  font-weight: bold;
+}
+.lienhe {
+  display: flex;
+  justify-content: center;
+}
+.socials-list {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.socials-list a {
+  font-size: 100px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  transition: 0.5s;
+  width: fit-content;
+  height: fit-content;
+}
+.socials-list a:hover {
+  transition: 0.5s;
+  color: rgba(246, 246, 246, 0.4);
+}
