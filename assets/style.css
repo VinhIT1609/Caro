@@ -166,15 +166,16 @@ a {
   font-size: 10px;
   display: flex;
   justify-content: center;
-  /* background-color: red; */
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 }
 .box_guide {
   width: 90%;
-  height: 80%;
-  /* background-color: black; */
+  height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   gap: 30px;
 }
 
@@ -182,15 +183,37 @@ a {
 .right_guide {
   background-color: white;
   border-radius: 50px;
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: fit-content;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: start;
-  padding: 0px 10px;
+  padding: 10px 30px;
+}
+.box_video{
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  border-top: 5px solid black;
+  vertical-align: middle;
+}
+.video_guide {
+  background-color: white;
+  border-radius: 50px;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video1 {
+  border-radius: 50px;
 }
 .left_guide {
 }
